@@ -18,10 +18,6 @@ export default async function Home() {
           practice quiz questions, and use
           memory tricks to prepare for class.
         </p>
-
-        <div className="hero-watermark">
-          A&amp;P
-        </div>
       </section>
 
       <section className="dashboard-grid">
