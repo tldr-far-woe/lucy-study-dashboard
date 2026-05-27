@@ -10,8 +10,12 @@ import {
   getRapidReview,
 } from "../../lib/googleSheets.js";
 
-export default function ChapterPage(props: any) {
-  const { id } = props.params;
+export default function ChapterPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  const id = params.id;
   const [chapter, setChapter] = useState<any>(null);
   const [chapterFlashcards, setChapterFlashcards] = useState<any[]>([]);
   const [chapterMemoryTricks, setChapterMemoryTricks] = useState<any[]>([]);
