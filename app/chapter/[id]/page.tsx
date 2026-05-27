@@ -11,7 +11,7 @@ import {
 } from "../../lib/googleSheets.js";
 
 export default function ChapterPage(props: any) {
-  const { id } = React.use(props.params);
+  const { id } = React.use(props.params as Promise<{ id: string }>);
   const [chapter, setChapter] = useState<any>(null);
   const [chapterFlashcards, setChapterFlashcards] = useState<any[]>([]);
   const [chapterMemoryTricks, setChapterMemoryTricks] = useState<any[]>([]);
